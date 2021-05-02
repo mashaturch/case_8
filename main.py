@@ -52,8 +52,8 @@ def get_color():
     print('\n {}\n {}\n {}\n {}\n {}\n {}\n'.format(ru_local.BLACK, ru_local.WHITE,\
                                                     ru_local.YELLOW, ru_local.RED,\
                                                     ru_local.BLUE, ru_local.GREEN))
-    name_color = int(input(ru_local.COLOR1)
-    name_bg = int(input(ru_local.COLOR2)
+    name_color = int(input(ru_local.COLOR1))
+    name_bg = int(input(ru_local.COLOR2))
     if name_color == 1:
         pencolor('black')
     elif name_color == 2:
