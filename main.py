@@ -176,7 +176,7 @@ def snowflake_koch():
 def main_minkovskiy():
     a = int(input(ru_local.LENGHT))
     n = int(input(ru_local.RECURTION))
-    minkovskiyh(n, a)
+    minkovskiy(n, a)
 
 def minkovskiy(order,size):
     '''Drawing minkovskiy fractal'''
