@@ -8,7 +8,7 @@ speed('fastest')
 
 
 def get_name_fractal():
-    '''This function hepls'''
+    '''This function set the main parameters of turtle anf chose the fractal'''
     print('{}'.format(ru_local.MENU))
     print('\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n'.format(ru_local.SQUARE, ru_local.BINTREE,\
                                                                             ru_local.BRANCH, ru_local.KOCH,\
@@ -42,6 +42,7 @@ def get_name_fractal():
         main_dragon()
 
 def get_color():
+    '''Chosing the turtle color'''
     print('{}'.format(ru_local.MENUC))
     print('\n {}\n {}\n {}\n {}\n {}\n {}\n'.format(ru_local.BLACK, ru_local.WHITE,\
                                                     ru_local.YELLOW, ru_local.RED,\
@@ -80,6 +81,7 @@ def main_square():
     square(a, n)
 
 def square(a, n):
+    '''Drawing fractal square'''
     if a < 20:
         return
     up()
@@ -116,6 +118,7 @@ def main_branch():
     branch(n, a)
 
 def branch(n, size):
+    '''Drawing binary tree'''
     if n == 0:
         left(180)
         return
@@ -136,6 +139,7 @@ def main_koch():
 
 # Кривая Коха.
 def koch(order, size):
+    '''Drawing koch fractal'''
     if order == 0:
         forward(size)
     else:
@@ -169,6 +173,7 @@ def main_minkovskiy():
     minkovskiyh(n, a)
 
 def minkovskiy(order,size):
+    '''Drawing minkovskiy fractal'''
     if order == 0:
         forward(size)
     else:
@@ -193,6 +198,7 @@ def main_ice_fractal():
     ice_fractal(n, a)
 
 def ice_fractal(order, size):
+    '''Drawing ice fracral (picture 1)'''
     if order == 0:
         forward(size)
     else:
@@ -210,6 +216,7 @@ def main_ice_fractal_2():
 
 
 def ice_fractal_2(n, a):
+    '''Drawing ice fracral (picture 2)'''
     if n == 0:
         forward(a)
     else:
@@ -231,6 +238,7 @@ def main_ice_snowflake():
     ice_snowflake(n, a)
 
 def ice_snowflake(n, a):
+    '''Drawing snowflake ice fracral'''
     for _ in range (6):
         left(60)
         ice_fractal(n, a)
@@ -244,6 +252,7 @@ def main_levi():
     ice_fractal_2(n, a)
 
 def levi(order, size):
+    '''Drawing levi fractal'''
     if order == 0:
         forward(size)
     else:
@@ -259,6 +268,7 @@ def main_dragon():
     dragon(n, a)
 
 def dragon(n, a):
+    '''Drawing dragon fractal'''
     if n == 0:
         forward(a)
     else:
